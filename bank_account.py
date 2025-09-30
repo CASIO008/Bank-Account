@@ -55,7 +55,11 @@ while True:
             print("Invalid withdrawal amount or exceeds withdrawal limit.")
 
     elif option == "s":
-        print(statement,f"Balance: {balance}")
+        print("=================STATEMENT=================")
+        print("any transaction was made." if not statement else "")
+        print(statement)
+        print(f"Balance: {balance}")
+        print("===========================================")
 
     elif option == "q":
         print("Goodbye!")        
